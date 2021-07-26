@@ -50,11 +50,7 @@ export default function App() {
     }
   };
   const checkBtnClickHandler = () => {
-    if (
-      stockPurchasePrice !== 0 &&
-      stockQuantity !== 0 &&
-      stockCurrentPrice !== 0
-    ) {
+    if (stockPurchasePrice > 0 && stockQuantity > 0 && stockCurrentPrice > 0) {
       if (
         isNaN(stockPurchasePrice) === false &&
         isNaN(stockQuantity) === false &&
