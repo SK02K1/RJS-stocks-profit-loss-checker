@@ -150,6 +150,7 @@ export default function App() {
           />
         </label>
         <label htmlFor="stock-current-price">
+          Current price
           <input
             onChange={(e) => (stockCurrentPrice = parseFloat(e.target.value))}
             type="number"
